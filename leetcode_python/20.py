@@ -18,4 +18,4 @@ class Solution(object):
             return False
         return True
 
-print(Solution().isValid("({{{{}}}))"))
+# print(Solution().isValid("({{{{}}}))"))

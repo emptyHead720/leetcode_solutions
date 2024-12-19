@@ -8,11 +8,11 @@ class Solution(object):
                 nums[last_index] = val
                 current_value = val
         return last_index + 1
-        # why is this solution not working on the website?
-        # nums = set(nums)
-        # nums = list(nums)
-        # print(nums)
-        # return len(nums)
+# why is the following solution not working on the website?
+# nums = set(nums)
+# nums = list(nums)
+# print(nums)
+# return len(nums)
 
 
 def main():

@@ -25,7 +25,7 @@ class Solution(object):
         return reversedLL
 
 
-# Solution in progress, recursive copied, need to invert
+# Solution in progress, recursive copying, need to invert
 class Solution1(object):
     def daughter_node(self, node):
         if node.next == None:

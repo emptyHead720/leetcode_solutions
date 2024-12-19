@@ -84,6 +84,7 @@ class MyLinkedList(object):
         else:
             print("node index out of range")
 
+
     def deleteAtIndex(self, index):
         """
         :type index: int
@@ -108,58 +109,11 @@ class MyLinkedList(object):
             self.tail = current_node
         
 
-    def __str__(self):
-        node_index = 0
-        current_node = self.head
-        ls = []
-        while(current_node):
-            ls.append(current_node.val)
-            current_node = current_node.next
-        return str(ls)
-        
-
-
-# Your MyLinkedList object will be instantiated and called as such:
-# obj = MyLinkedList()
-# print(obj)
-# # param_1 = obj.get(index)
-# obj.addAtHead(1)
-# print(obj)
-# obj.addAtTail(3)
-# print(obj)
-# obj.addAtIndex(1,2)
-# print(obj)
-# print(f'\n{obj.get(1) = }\n')
-# obj.deleteAtIndex(1)
-# print(obj)
-# print(f'\n{obj.get(1) = }\n')
-
-
-obj = MyLinkedList()
-print(obj)
-print(f'\n{obj.addAtHead(7) = }\n')
-print(obj)
-print(f'\n{obj.addAtHead(2) = }\n')
-print(obj)
-print(f'\n{obj.addAtHead(1) = }\n')
-print(obj)
-print(f'\n{obj.addAtIndex(3,0) = }\n')
-print(obj)
-print(f'\n{obj.deleteAtIndex(2) = }\n')
-print(obj)
-print(f'\n{obj.addAtHead(6) = }\n')
-print(obj)
-print(f'\n{obj.addAtTail(4) = }\n')
-print(obj)
-print(f'\n{obj.get(4) = }\n')
-print(obj)
-print(f'\n{obj.addAtHead(4) = }\n')
-print(obj)
-print(f'\n{obj.addAtIndex(5,0) = }\n')
-print(obj)
-print(f'\n{obj.addAtHead(6) = }\n')
-print(obj)
-
-
-
-
+    # def __str__(self):
+    #     node_index = 0
+    #     current_node = self.head
+    #     ls = []
+    #     while(current_node):
+    #         ls.append(current_node.val)
+    #         current_node = current_node.next
+    #     return str(ls)

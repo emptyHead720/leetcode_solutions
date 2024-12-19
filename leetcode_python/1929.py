@@ -12,5 +12,5 @@ class Solution(object):
 
         return ans
 
-obj = Solution()
-print(obj.getConcatenation([1, 2, 1]))
+# obj = Solution()
+# print(obj.getConcatenation([1, 2, 1]))
