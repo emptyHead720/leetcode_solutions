@@ -11,11 +11,11 @@ class Solution(object):
         """
         if not head:
             return None
-        all_val = [head.val]
+        all_val = []
         current_node = head
-        while(current_node.next != None):
-            current_node = current_node.next
+        while current_node:
             all_val.append(current_node.val)
+            current_node = current_node.next
         reversedLL = ListNode(all_val[-1])
         all_val.pop()
         current_node = reversedLL
@@ -42,3 +42,4 @@ class Solution1(object):
             return None
         reversedLL = self.daughter_node(head)
         return reversedLL
+
