@@ -1,14 +1,8 @@
 class Solution(object):
     total_ways = 0
-    recursive_call_dict = {}
+    recursive_call_dict = {1 : 1, 2 : 2}
     # calls = 0
     def next_step(self, n):
-        if n == 2:
-            self.calls += 1
-            return 2
-        if n == 1:
-            self.calls += 1
-            return 1
         if n-1 in self.recursive_call_dict:
             v1 = self.recursive_call_dict[n-1]
         else:
@@ -20,7 +14,6 @@ class Solution(object):
             v2 = self.next_step(n-2)
             self.recursive_call_dict[n-2] = v2
         return v1 + v2
-        # return self.next_step(n-1) + self.next_step(n-2)
 
 
     def climbStairs(self, n):
